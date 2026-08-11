@@ -1,0 +1,50 @@
+programa {
+  funcao inicio() {
+  escreva ("Boletim de Lançamento de notas")
+
+  cadeia nome 
+  cadeia curso
+  cadeia disciplina
+  real nota1 
+  real nota2
+  real media 
+
+  escreva ("\nNome do(a) aluno(a): ")
+  leia (nome)
+
+  escreva ("\nCurso: ")
+  leia (curso)
+
+  escreva ("\nDisciplina: ")
+  leia (disciplina)
+
+  escreva ("\nNota 1: ")
+  leia (nota1)
+
+  escreva ("\nNota 2: ")
+  leia (nota2)
+
+  media =( nota1 + nota2 )/2 
+
+  se (media>=100)
+  {
+    escreva ("\n Erro de Calculo")
+  }
+
+  se (media >= 60 e media <= 100)
+  {
+    escreva ("\n Está APROVADO!")
+  }
+
+  se (media <=19)
+  {
+    escreva ("\n Está REPROVADO!")
+  }
+  se (media <=59)
+  {
+    escreva("\n Voce Esta de Recuperação")                           
+  }
+
+    
+  }
+}
