@@ -2,33 +2,37 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-// leitura de 02 numero inteiros
 
 int main(int argc, char *argv[]) {
 	
-	int primeiro, segundo, aux;
+	int numero;
 	
-	printf("digite o primeiro valor");
-	scanf("%d", &primeiro);
-	printf("digite o segundo valor");
-	scanf("%d", &segundo);
+	printf("Digite um numero inteiro: ");
+	scanf("d% , &numero");
 	
-	aux = primeiro;
-	primeiro = segundo;
-	segundo = aux;
-
+	if (numero > 0){
+		printf("O inverso do numero e: %.2f\n", 1.0 / numero);
+	} else {
+		printf("O Quadrado de numero e: %d\n", numero* numero);
+	}
 	
-	printf ("%d \n %d", segundo, primeiro);
+/*	
+	printf("Insira os valores de A, B, C: ");
+	scanf("%d %d %d", &a, &b, &c);
 	
+	if (a>b){
+		resultado = a;
+	}else{
+		resultado = b;
+	}
 	
-	printf("Exercicio 02")
+	if (c>resultado){
+		resultado = c;
+	}
 	
-	double valor;
+	printf("%d e o maior", resultado);
 	
-	printf("Digite o valor");
-	scanf("%lf", &valor);
-	
-	printf("Notacao : %e\n", valor);
+	*/
 	
 	
 	return 0;
