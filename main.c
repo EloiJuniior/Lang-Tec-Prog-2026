@@ -3,33 +3,27 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	int resposta;
-	printf("Usuario, qual exercicio quer resolver? |2|3|8|\n");
-	scanf("%d", &resposta);
-	
-	switch (resposta)
-	case 2:
-	
-	;
-	//Faça um programa que leia um valor em reais e catação do dolar. Em seguida, imprima o valor correspondente em dólar
-	float dola, real, cotaa;
-	scanf("%f", &real);
-	scanf("%f", &cota);
-	printf("%f reais são %f dolinhos", real, (real/cota));
-	
-	//Leia um valor que represente uma temperatura em graus Celsius e apresente-a convertida em graus fahrenheit.
-	float tempC, tempF;
-	scanf("%f", &tempC);
-	tempF = tempC *(9.0/5.0) + 32.0;
-	printf("A temperatura maxima de hoje na tela da globo %f", tempF);
-	
-	//(URI 1019) Leia um valor inteiro, que é o tempo de duração em segundos de um determinado evento em uma fábrica, e
-	int segundos;
-	scanf("%f", &segundos);
-	horas = segundos/3600 ;
-	minutos = (segundos-(horas*3600))60;
-	segundos = segundos-((horas*3600)+(minutos*60));
-	printf("Tempo %d:%d%d", (segundos%36000))
-	return 0;
+int mult (int digto, int valor){
+	return digto*valor;
 }
+
+int main(int argc, char *argv[]) {
+	
+	int dg1, dg2, dg3 , dg4, dg5, dg6, dg7, dg8, dg9, dv, dv2, soma, resto;
+		
+		scanf("%d %d %d . %d %d %d . %d %d %d - %d %d", &dg1, &dg2, &dg3 , &dg4, &dg5, &dg6, &dg7, &dg8, &dg9, &dv, &dv2);
+	
+	printf("confirme o cpf: %d%d%d.%d%d%d.%d%d%d-%d%d",
+	dg1, dg2, dg3 , dg4, dg5, dg6, dg7, dg8, dg9, dv, dv2);
+	
+	soma = mult(dg1,10)mult(dg2,9)+(dg3,8)+(dg4,7)+(dg5,6)+(dg6,5)+(dg7,4)+(dg8,3)+mult(dg9,2);
+	
+	soma *=10;
+	resto = soma%11;
+	
+	
+	
+	
+    return 0;
+}
+
